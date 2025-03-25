@@ -1,0 +1,307 @@
+.container {
+	margin: 20px;
+	max-height: 77vh;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.tabs {
+	display: flex;
+	margin-bottom: 15px;
+	gap: 20px;
+}
+
+.tabs button {
+	padding: 10px 20px;
+	margin-right: 5px;
+	border: none;
+	background-color: #f1f1f1;
+	color: #333;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.tabs button:hover {
+	background-color: #e7e7e7;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs button:focus {
+	outline: none;
+}
+
+.activeTab {
+	background-color: #28a745;
+	color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actionsBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.leftActions {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	gap: 10px;
+}
+
+.rightActions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.filterInput {
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 200px;
+}
+
+.button {
+	background-color: #4f9a94;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.button:hover {
+	background-color: #3a756a;
+}
+
+.hiddenFileInput {
+	display: none;
+}
+
+.dataContainer {
+	overflow: auto;
+	max-height: calc(80vh - 150px);
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	cursor: pointer; /* Added cursor pointer for table rows */
+}
+
+.table th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.table tr:hover {
+	background-color: #f1f1f1;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modalContent {
+	background-color: whitesmoke; /* Brighter background */
+	padding: 25px;
+	border-radius: 12px;
+	width: 43%;
+	max-width: 800px;
+	max-height: 90%;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	overflow-y: auto;
+	position: relative;
+}
+
+.modal h2 {
+	margin-top: 0;
+	font-size: 1.5rem; /* Increased font size */
+	color: #333;
+}
+
+.editContainer {
+	background-color: #f9f9f9; /* Light background */
+	padding: 20px;
+	border-radius: 8px;
+	overflow-y: auto;
+	max-height: 300px;
+	margin-top: 15px;
+}
+
+.modalField input,
+.modalField select,
+.modalField label {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.modalField input,
+.modalField select {
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box; /* Ensure padding does not increase element width */
+}
+
+.label {
+	display: inline-block; /* Ensures labels are inline */
+	margin-right: 20px; /* Increased right margin for more spacing */
+}
+
+.timeInput {
+	width: 80px;
+	padding: 8px;
+	margin-right: 20px; /* Maintain the right margin */
+}
+
+.editRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.deleteButton {
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 20px; /* Maintain the left margin */
+}
+
+.deleteButton:hover {
+	background-color: #ff4c4c;
+}
+
+.shiftDetailsContainer {
+	display: flex;
+	flex-direction: column;
+	max-height: 60vh;
+	overflow: auto;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.modalActions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.paginationContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.backButton {
+	text-align: left;
+}
+
+.backButtonLink {
+	padding: 10px 20px;
+	background-color: #4f9a94;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.backButtonLink:hover {
+	background-color: #3a756a;
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.successBar {
+	position: fixed;
+	top: 10px;
+	left: 10%;
+	width: 80%;
+	background-color: #e1f0c4;
+	border-radius: 8px;
+	padding: 12px 15px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	z-index: 1000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.errorList {
+	margin-top: 10px;
+	padding-left: 15px;
+	text-align: left;
+	font-size: 0.9em;
+	color: #d9534f;
+}
+
+.animate.popUp {
+	animation-duration: 5s;
+	animation-name: animate-popUp;
+	animation-timing-function: cubic-bezier(0.26, 0.53, 0.54, 1.1);
+}
+
+@keyframes animate-popUp {
+	0% {
+		transform: translateY(-500px);
+	}
+	10% {
+		transform: translateY(20px);
+	}
+	12% {
+		transform: translateY(10px);
+	}
+	70% {
+		transform: translateY(10px);
+	}
+	80% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(-500px);
+	}
+}

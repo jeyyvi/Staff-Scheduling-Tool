@@ -1,0 +1,58 @@
+.slideIn {
+	position: fixed;
+	top: 0;
+	right: -300px; /* Width of the slide-in component */
+	width: 300px;
+	height: 100%;
+	background-color: #eaf5ea; /* Light green background to match table header */
+	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Softer shadow for consistency */
+	transition: right 0.3s ease;
+	z-index: 1000;
+	border-left: 1px solid #6bab90; /* Matches the table borders */
+	border-radius: 8px 0 0 8px;
+}
+
+.open {
+	right: 0;
+}
+
+.detailsContainer {
+	padding: 20px;
+	color: #333; /* Neutral text color for readability */
+	font-family: Arial, sans-serif; /* Matches the table's style */
+}
+
+.detailsContainer h2 {
+	font-size: 1.5rem;
+	color: #6bab90; /* Primary green color to match table theme */
+	margin-bottom: 10px;
+	border-bottom: 2px solid #6bab90;
+	padding-bottom: 5px;
+}
+
+.detailsContainer p {
+	margin: 10px 0;
+	font-size: 1rem;
+}
+
+.closeButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: #6bab90; /* Matches arrow buttons */
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.closeButton:hover {
+	background-color: #55917f; /* Darker green for hover effect */
+}

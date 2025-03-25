@@ -1,0 +1,266 @@
+.profileContainer {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 80px);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background-color: #bcbcbc;
+}
+
+.profileContent {
+	background: white;
+	border-radius: 15px;
+	padding: 16px 20px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	height: calc(100vh - 110px);
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.basicInfo {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;
+	align-items: flex-start;
+	padding: 20px 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.avatar img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.info {
+	flex: 1;
+	min-width: 250px;
+}
+
+.info h1 {
+	margin: 0;
+	font-size: 1.8em;
+	margin-bottom: 12px;
+}
+
+.infoDetails {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	color: #666;
+	margin: 12px 0;
+	font-size: 1.2em;
+}
+
+.contactInfo {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-top: 24px;
+}
+
+.field {
+	flex: 1;
+}
+
+.editButton {
+	margin-top: 10px;
+}
+
+.field label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	color: #333;
+	font-weight: 500;
+}
+
+/* overview section */
+.overviewSection {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.teamOverview,
+.weeklyOverview {
+	background: #e8f6e9;
+	padding: 20px;
+	border-radius: 12px;
+	font-size: 1em;
+	max-height: 270px;
+	overflow-y: auto;
+	flex: 1 1 300px;
+}
+
+/* Team Overview section */
+.teamOverview h2 {
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	color: #333;
+	font-weight: 600;
+}
+
+.teamOverview table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.teamOverview th {
+	padding: 8px;
+	text-align: left;
+	font-size: 0.9em;
+	font-weight: 600;
+	color: #333;
+	border-bottom: 2px solid #4caf50;
+}
+
+.teamOverview td {
+	padding: 8px;
+	text-align: left;
+	font-size: 0.9em;
+	color: #444;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.teamOverview tr:hover:not(#tableHeader) {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Weekly Overview section */
+.weeklyOverview h2 {
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	color: #333;
+	font-weight: 600;
+}
+
+.weeklyStats {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 20px;
+}
+
+.statRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.stat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.stat span:first-child {
+	font-size: 1.2em;
+	color: #333;
+	font-weight: 500;
+}
+
+.stat span:last-child {
+	font-size: 1.3em;
+	color: #444;
+	font-weight: 600;
+	margin-left: 20px;
+}
+
+.overtimeStat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.overtimeStat span:first-child {
+	font-size: 1.2em;
+	color: #333;
+	font-weight: 500;
+}
+
+.overtimeStat span:last-child {
+	font-size: 1.3em;
+	color: #444;
+	font-weight: 600;
+	margin-left: 20px;
+}
+
+/* WebKit Scrollbar Styling */
+.teamOverview::-webkit-scrollbar,
+.weeklyOverview::-webkit-scrollbar,
+.profileContent::-webkit-scrollbar {
+	display: none;
+}
+
+.teamOverview:hover::-webkit-scrollbar,
+.weeklyOverview:hover::-webkit-scrollbar,
+.profileContent:hover::-webkit-scrollbar {
+	display: block;
+	width: 8px;
+	background-color: #f4f4f4;
+}
+
+.teamOverview::-webkit-scrollbar-thumb,
+.weeklyOverview::-webkit-scrollbar-thumb,
+.profileContent::-webkit-scrollbar-thumb {
+	background-color: #6bab90;
+	border-radius: 4px;
+}
+
+/* Success bar styling */
+.successBar {
+	position: fixed;
+	top: 10px;
+	left: 10%;
+	width: 80%;
+	background-color: #e1f0c4;
+	border-radius: 8px;
+	padding: 12px 0;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	z-index: 1000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.animate.popUp {
+	animation-duration: 5s;
+	animation-name: animate-popUp;
+	animation-timing-function: cubic-bezier(0.26, 0.53, 0.54, 1.1);
+}
+
+@keyframes animate-popUp {
+	0% {
+		transform: translateY(-500px);
+	}
+
+	10% {
+		transform: translateY(20px);
+	}
+
+	12% {
+		transform: translateY(10px);
+	}
+	70% {
+		transform: translateY(10px);
+	}
+
+	80% {
+		transform: translateY(20px);
+	}
+
+	100% {
+		transform: translateY(-500px);
+	}
+}

@@ -1,0 +1,111 @@
+/* DashboardHeader.module.css */
+.headerSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.breadcrumbs {
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.breadcrumbs .separator {
+	margin: 0 8px;
+	color: #888;
+}
+
+.breadcrumbs .activePath {
+	font-weight: bold;
+	color: #333333;
+}
+
+.headerIcons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.applyLeaveButton {
+	background-color: #c3e88d;
+	padding: 8px 16px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.notificationIcon {
+	position: relative;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.notificationCount {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+.profilePic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.notificationsDropdown {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 250px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	z-index: 10;
+}
+
+.notificationsDropdown h4 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+.notificationsDropdown ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.notificationsDropdown li {
+	padding: 8px 0;
+	font-size: 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.notificationsDropdown li:last-child {
+	border-bottom: none;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}

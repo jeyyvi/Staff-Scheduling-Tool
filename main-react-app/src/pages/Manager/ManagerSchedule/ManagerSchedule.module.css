@@ -1,0 +1,144 @@
+.managerScheduleContainer {
+	width: 100%;
+}
+.managerSchedule {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	transition: transform 0.3s ease;
+	width: 100%;
+}
+
+.managerSchedule.shifted {
+	transform: translateX(-300px);
+}
+
+.leftContainer {
+	flex: 0.7;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px 10px 10px 10px;
+}
+
+.scheduleTableContainer {
+	flex: 1.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.buttonsContainer {
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+	width: 100%;
+	max-width: 290px;
+}
+
+.swapShiftButton,
+.viewCalendarButton {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	background-color: #55917f;
+	border: none;
+	color: whitesmoke;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-align: center;
+}
+
+.swapShiftButton:hover {
+	background-color: #346b5c;
+}
+
+.viewCalendarButton:hover {
+	background-color: #346b5c;
+}
+
+/* Swap Shift Modal Styling */
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px); /* Background blur */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modalContent {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+/* Form Styling */
+.modalForm {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.formGroup {
+	text-align: left;
+}
+
+.formLabel {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.formInput {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+select.formInput {
+	font-size: 14px;
+	padding: 8px;
+}
+
+textarea.formInput {
+	resize: vertical;
+}
+
+.formActions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cancelButton,
+.submitButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.cancelButton {
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+.submitButton {
+	background-color: #4caf50;
+	color: white;
+}

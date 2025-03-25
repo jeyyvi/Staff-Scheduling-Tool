@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.leftContainer {
+	flex: 2.618;
+}
+
+.rightContainer {
+	flex: 1;
+}
+
+.content {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.infoBox {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

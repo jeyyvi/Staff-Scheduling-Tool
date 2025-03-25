@@ -1,0 +1,120 @@
+/* ExportModal.module.css */
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modalContent {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	width: 400px;
+	max-width: 90%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.closeButton {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.modalBody {
+	margin: 20px 0;
+}
+
+.section {
+	margin-bottom: 20px;
+}
+
+.fileFormatContainer {
+	display: flex;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	width: fit-content;
+	gap: 10px;
+}
+
+.fileFormatBox {
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	transition: border-color 0.3s ease;
+	font-size: 16px;
+	border: 1px solid transparent;
+}
+
+.fileFormatBox:hover {
+	border: 1px solid #007bff;
+}
+
+.selected {
+	border: 2px solid #006100;
+	background-color: #c6efce;
+	color: #006100;
+	font-weight: 500;
+}
+
+.fileGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.fileBox {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	transition: border-color 0.3s ease;
+}
+
+.fileBox:hover {
+	border: 1px solid #007bff;
+}
+
+.selectedFile {
+	border: 2px solid #006100;
+	background-color: #c6efce;
+	color: #006100;
+	font-weight: 500;
+}
+
+.modalFooter {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cancelButton,
+.exportButton {
+	background: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.cancelButton {
+	background: #6c757d;
+	margin-right: 10px;
+}

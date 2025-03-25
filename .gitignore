@@ -1,0 +1,17 @@
+*.idea
+
+*.qodo
+
+*.vscode
+
+*node_modules
+
+venv/
+
+__pycache__/
+
+*flask_session
+
+package-lock.json
+package.json
+.qodo

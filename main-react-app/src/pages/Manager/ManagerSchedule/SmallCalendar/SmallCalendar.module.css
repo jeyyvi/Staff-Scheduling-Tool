@@ -1,0 +1,68 @@
+.calendar {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.header button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+}
+
+.dayLabel {
+	font-weight: bold;
+	text-align: center;
+}
+
+.day {
+	text-align: center;
+	padding: 5px;
+	cursor: default;
+	background: #fff;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	transition: background 0.2s ease-in-out;
+}
+
+.day:hover {
+	background: #6bab90;
+	color: white;
+	cursor: pointer;
+}
+
+.today {
+	background-color: #6bab90;
+	color: #333;
+	font-weight: bold;
+	border: 1px solid #55917f;
+}
+
+.currentWeek {
+	background: #d4ebd0;
+	color: #333;
+	border-radius: 3px;
+}
+
+.currentView {
+	background: #d4ebd0;
+	color: #333;
+	border-radius: 3px;
+}

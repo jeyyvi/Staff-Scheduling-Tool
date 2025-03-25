@@ -1,0 +1,77 @@
+/* LeaveSuccessRate.module.css */
+
+.leaveSuccessRateContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	position: relative; /* Add relative positioning to the container */
+}
+
+.title {
+	padding: 20px 0 0 20px;
+	height: 30%;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.circlesContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.leftBox,
+.rightBox {
+	height: 130px;
+	position: relative;
+	font-weight: 500;
+}
+
+.innerCircle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute; /* Absolute positioning for the circles */
+	z-index: 10;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leftBox .innerCircle {
+	bottom: 0px; /* Position the circle at the bottom right */
+	right: 0px;
+	background-color: #c6efce;
+	color: #006100;
+}
+
+.rightBox .innerCircle {
+	top: 0px; /* Position the circle at the top left */
+	left: 0px;
+	color: #9c0006;
+	background-color: #ffc7ce;
+}
+
+.leftBoxIndicator {
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+.rightBoxIndicator {
+	padding-left: 10px;
+	padding-top: 15%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.bigNumber {
+	font-size: 24px;
+	font-weight: 500;
+	align-self: center;
+}

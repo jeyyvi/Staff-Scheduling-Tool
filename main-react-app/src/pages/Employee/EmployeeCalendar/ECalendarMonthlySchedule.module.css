@@ -1,0 +1,115 @@
+.monthlyScheduleContainer {
+	max-width: 80%; /* Slightly reduce the width */
+	margin-right: auto; /* Center the calendar */
+	margin-left: auto; /* Center the calendar */
+	margin-bottom: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: #f7f7f7;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transform: scale(0.85);
+	transform-origin: top center;
+}
+
+.monthNavigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.monthNavigation button {
+	background-color: #4e6969;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.monthNavigation button:hover {
+	background-color: #3d5555;
+}
+
+.monthNavigation span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.calendarGrid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 15px; /* Keep the spacing */
+}
+
+.dayCell {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 61.8%; /* Maintain the height-to-width ratio of 1:1.618 */
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 16px; /* More rounded corners */
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.greyedOut {
+	background-color: #e0e0e0;
+}
+
+.dayLabel {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.shifts {
+	flex-grow: 1;
+}
+
+.shift {
+	padding: 5px;
+	border-radius: 4px;
+	margin: 0 7px 5px 7px;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.shift:hover::before {
+	content: attr(title); /* Use the title attribute for the tooltip */
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #333;
+	color: #fff;
+	padding: 5px;
+	border-radius: 4px;
+	white-space: nowrap;
+	z-index: 1000;
+}
+
+.shift:hover::after {
+	content: "";
+	position: absolute;
+	bottom: calc(100% - 5px);
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+}
+
+.emptyShift {
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+.button {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background-color: #e1f0c4;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #333333;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button.disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}

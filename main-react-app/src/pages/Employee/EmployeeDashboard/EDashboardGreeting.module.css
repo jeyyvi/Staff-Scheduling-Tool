@@ -1,0 +1,47 @@
+/* Left Section */
+.leftSection {
+	margin: auto;
+	flex: 1;
+	max-width: 38.2%;
+	padding: 10px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.leftSection h2 {
+	margin: 0;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.leftSection p {
+	margin-top: 3%;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+/* Custom style for the calendar button in the dashboard */
+.myCalendarButton {
+	padding: 0.6em 1.2em;
+	width: 15vw;
+	font-size: 0.9em;
+	background-color: #c3e88d;
+	color: #2b2b2b;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.myCalendarButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.myCalendarButton:active {
+	transform: translateY(2px);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

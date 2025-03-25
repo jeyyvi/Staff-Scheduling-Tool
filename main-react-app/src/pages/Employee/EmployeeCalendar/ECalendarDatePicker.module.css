@@ -1,0 +1,91 @@
+.dateNavigatorContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.dateNavigator {
+	display: flex;
+	justify-content: space-between; /* Equal spacing for all date elements */
+	align-items: center;
+	width: calc(90% + 29.35px * 2);
+	margin-bottom: 20px;
+}
+
+.dateNavigator button {
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+.currentDate,
+.otherDate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+}
+
+.currentDate {
+	transform: translateY(-12px);
+}
+
+.dateNumber {
+	font-size: 36px;
+	margin-bottom: 5px;
+}
+
+.dayName {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.currentDate .dateNumber,
+.currentDate .dayName {
+	color: #333333;
+}
+
+.otherDate .dateNumber,
+.otherDate .dayName {
+	color: #888;
+}
+
+.currentDate .verticalLine {
+	width: 10px;
+	height: 15px;
+	background-color: #ffe2d1;
+	border: 0.5px solid #333333;
+	border-radius: 5px;
+	position: absolute;
+	bottom: -20px;
+}
+
+.otherDate .verticalLine {
+	width: 2px;
+	height: 15px;
+	background-color: black;
+	position: absolute;
+	bottom: -20px;
+}
+
+.arrowButton {
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.weeklyView .otherDate .dateNumber,
+.weeklyView .otherDate .dayName {
+	color: #333333;
+}
+
+.weeklyView .currentDate .verticalLine {
+	width: 2px;
+	height: 15px;
+	background-color: black;
+	position: absolute;
+	bottom: -20px;
+}

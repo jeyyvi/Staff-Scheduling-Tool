@@ -1,0 +1,18 @@
+/* HoursWorked.module.css */
+.chartWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	width: 80%;
+	border-radius: 10px;
+}
+
+.chartTitle {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #333333;
+	text-align: center;
+}

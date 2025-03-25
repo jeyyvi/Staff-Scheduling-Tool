@@ -1,0 +1,67 @@
+.container {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.dailyContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.weeklyContainer {
+	display: flex;
+}
+
+.ECalendarTimeline {
+	flex-grow: 1;
+}
+
+.ECalendarScheduleType {
+	margin-bottom: 20px;
+}
+
+.monthHeader {
+	margin-top: -12px;
+	padding-bottom: 2px;
+	padding-top: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	border-radius: 10px; /* Curved corners for the entire tab container */
+	overflow: hidden; /* Ensure child elements respect the border radius */
+}
+
+.tabs button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #f0f0f0;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 10px; /* Curved corners for all buttons */
+	margin: 0 5px; /* Add some space between buttons */
+	transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.tabs button.activeTab {
+	background-color: #d0d0d0;
+	font-weight: bold;
+}
+
+.tabs button:not(.activeTab):hover {
+	background-color: #e0e0e0;
+}
+
+.monthlyContainer {
+	display: block;
+	height: 70vh;
+}

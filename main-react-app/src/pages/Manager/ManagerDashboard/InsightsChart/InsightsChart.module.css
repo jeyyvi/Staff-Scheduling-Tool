@@ -1,0 +1,52 @@
+.insightsTitle {
+	margin-top: 0;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.insightsContainer {
+	width: 90%;
+	height: 90%;
+	padding: 1em;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background-color: whitesmoke;
+}
+
+.chart {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.flagContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.flagItem {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+}
+
+.flagColor {
+	width: 12px;
+	height: 12px;
+	border-radius: 2px;
+}
+
+.flagColor.gray {
+	background-color: #ccc;
+}
+
+.flagColor.green {
+	background-color: #90c088;
+}
+
+.flagColor.red {
+	background-color: #ff6b6b;
+}

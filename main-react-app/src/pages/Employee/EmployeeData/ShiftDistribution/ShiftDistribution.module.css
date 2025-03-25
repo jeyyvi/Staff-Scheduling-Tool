@@ -1,0 +1,45 @@
+.shiftDistributionContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 80%;
+	padding: 0 20px 0 20px;
+}
+
+.shiftDistributionTitle {
+	font-size: 16px;
+	margin-bottom: 20px;
+	align-self: flex-start;
+	font-weight: 500;
+}
+
+.semiCircleContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60%;
+}
+
+.semicircle {
+	width: 80%;
+	height: 70%;
+	scale: 1.8;
+}
+
+.semiCircleTextContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.semiCircleText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	font-size: 24px;
+	font-weight: 500;
+}

@@ -1,0 +1,153 @@
+/* Container for the entire page */
+.insightsPage {
+	display: flex;
+	justify-content: center;
+	padding: 2vw;
+	min-height: 80vh;
+	--spacing: calc(10vh + 2vw);
+}
+
+/* Main container for insights */
+.insightsContainer {
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+/* Header box */
+
+.headerContainer {
+	display: flex;
+	height: 10vh;
+	justify-content: center;
+	padding: 20px 20px 0 20px;
+}
+.headerBox {
+	flex: 1;
+	background-color: white;
+	color: #333333;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.headerItemLeft {
+	flex: 1.618;
+	display: flex;
+}
+
+.exportButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #333333;
+	margin: 20px;
+	width: 10vw;
+	border-radius: 8px;
+	height: 5vh;
+	cursor: pointer;
+	background-color: #e1f0c4;
+}
+
+.headerItemRight {
+	flex: 1;
+}
+
+.dateRange {
+	border: 2px solid #333333;
+	border-radius: 8px;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background-color: #e1f0c4;
+}
+
+/* Middle section with golden ratio split */
+.middleBox {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-height: 30vh;
+}
+
+.middleLeft,
+.middleRight {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 0 20px;
+}
+
+.middleLeft {
+	flex: 1;
+	min-width: 30%;
+}
+
+.middleRight {
+	flex: 1.618;
+	min-width: 60%;
+}
+
+/* Inner boxes in the middle section */
+.middleLeftItem,
+.middleRightItem {
+	flex: 1;
+	background-color: white;
+	display: flex;
+
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.middleLeftItem {
+	justify-content: center;
+}
+.middleRightItem {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Bottom section with three equal boxes */
+.bottomBox {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.bottomItem {
+	flex: 1;
+	width: 30%;
+	min-width: 30%;
+	height: auto;
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	padding: 20px;
+}
+
+/* Inner boxes in the bottom section */
+.bottomItemBox {
+	flex: 1;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

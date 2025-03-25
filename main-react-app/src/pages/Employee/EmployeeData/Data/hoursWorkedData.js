@@ -1,0 +1,36 @@
+// hoursData.js
+
+const hoursWorkedData = [
+	{ date: "2024-11-01", hours: 8 },
+	{ date: "2024-11-02", hours: 5 },
+	{ date: "2024-11-03", hours: 7.5 },
+	{ date: "2024-11-04", hours: 6 },
+	{ date: "2024-11-05", hours: 8 },
+	{ date: "2024-11-06", hours: 4 },
+	{ date: "2024-11-07", hours: 9 },
+	{ date: "2024-11-08", hours: 7 },
+	{ date: "2024-11-09", hours: 5.5 },
+	{ date: "2024-11-10", hours: 6 },
+	{ date: "2024-11-11", hours: 8.5 },
+	{ date: "2024-11-12", hours: 7 },
+	{ date: "2024-11-13", hours: 5.5 },
+	{ date: "2024-11-14", hours: 8 },
+	{ date: "2024-11-15", hours: 6 },
+	{ date: "2024-11-16", hours: 9 },
+	{ date: "2024-11-17", hours: 5 },
+	{ date: "2024-11-18", hours: 7.5 },
+	{ date: "2024-11-19", hours: 4 },
+	{ date: "2024-11-20", hours: 8 },
+	{ date: "2024-11-21", hours: 6.5 },
+	{ date: "2024-11-22", hours: 9 },
+	{ date: "2024-11-23", hours: 5 },
+	{ date: "2024-11-24", hours: 7 },
+	{ date: "2024-11-25", hours: 8 },
+	{ date: "2024-11-26", hours: 4.5 },
+	{ date: "2024-11-27", hours: 7 },
+	{ date: "2024-11-28", hours: 8.5 },
+	{ date: "2024-11-29", hours: 6 },
+	{ date: "2024-11-30", hours: 5.5 },
+];
+
+export default hoursWorkedData;

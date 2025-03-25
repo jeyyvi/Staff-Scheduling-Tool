@@ -1,0 +1,41 @@
+/* EmployeeDashboard.module.css */
+/* Main container */
+.dashboardContainer {
+	display: flex;
+	flex-direction: column;
+	--spacing: calc(10vh + 2vw);
+	padding: 0 0 0 2vh;
+}
+
+/* Top Half */
+.topHalf {
+	flex: 0.4;
+	display: flex;
+	flex-direction: column;
+	max-height: calc((100% - var(--spacing)) / 2);
+}
+
+/* Split Section */
+.splitSection {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+/* Bottom Half */
+.bottomHalf {
+	flex: 0.4;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Bottom Sections */
+.bottomSection {
+	flex: 1;
+	min-width: 31%;
+	padding: 0 10px 0 10px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* Third Bottom Section */

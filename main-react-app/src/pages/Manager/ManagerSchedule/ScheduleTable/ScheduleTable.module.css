@@ -1,0 +1,181 @@
+.scheduleTable {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #6bab90;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 90%;
+	height: 70vh;
+	margin: auto;
+}
+
+.weekHeader {
+	display: flex;
+	background-color: #6bab90;
+	border-bottom: 1px solid #55917f;
+}
+
+.nameColumnHeader {
+	width: 20%;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.weekDay {
+	flex: 1;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.scheduleRows {
+	flex: 1;
+	background-color: #ffffff;
+	overflow-y: auto;
+	transition: all 0.3s ease-in-out;
+}
+
+/* WebKit Scrollbar Styling */
+.scheduleRows::-webkit-scrollbar {
+	display: none;
+}
+
+.scheduleRows:hover::-webkit-scrollbar {
+	display: block;
+	width: 8px;
+	background-color: #f4f4f4;
+}
+
+.scheduleRows::-webkit-scrollbar-thumb {
+	background-color: #6bab90;
+	border-radius: 4px;
+}
+
+/* Rows and Slots */
+.row {
+	display: flex;
+	min-height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+.employeeName {
+	width: 20%;
+	text-align: left;
+	padding: 10px;
+	background-color: #e1f0c4;
+	border-right: 1px solid #ddd;
+}
+
+.slot {
+	flex: 1;
+	border-right: 1px solid #ddd;
+	background-color: #ffffff;
+}
+
+/* Alternating Rows */
+.row:nth-child(even) .slot {
+	background-color: #f9f9f9;
+}
+
+.scheduleTableContainer {
+	width: 90%;
+	margin: auto;
+}
+
+.weekDisplay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: #eaf5ea;
+	border: 1px solid #6bab90;
+	border-radius: 5px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.arrow {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	background-color: #6bab90;
+	color: #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.arrow:hover {
+	background-color: #55917f;
+}
+
+.colorStrip1::after {
+	background-color: #f44336; /* Red */
+}
+
+.colorStrip2::after {
+	background-color: #2196f3; /* Blue */
+}
+
+.colorStrip3::after {
+	background-color: #4caf50; /* Green */
+}
+
+.colorStrip4::after {
+	background-color: #ff9800; /* Orange */
+}
+
+.shift {
+	border-radius: 4px;
+	position: relative;
+	background-color: #ffe2d1;
+	height: auto;
+}
+
+.shift:hover {
+	cursor: pointer;
+}
+
+.shift::after {
+	content: "";
+	height: 5px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.shift:hover .tooltip {
+	visibility: visible;
+}
+
+.daysSelector {
+	margin-left: 10px;
+	padding: 5px;
+	font-size: 1rem;
+	border: 1px solid #6bab90;
+	border-radius: 5px;
+	background-color: #ffffff;
+	cursor: pointer;
+}

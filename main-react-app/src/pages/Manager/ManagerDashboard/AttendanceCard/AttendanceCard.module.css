@@ -1,0 +1,60 @@
+.rate {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.absentInfo {
+	border: 1px solid #e0e0e0;
+	padding: 8px 15px;
+	border-radius: 4px;
+}
+
+.name {
+	color: #ff6b6b;
+}
+
+.attendanceSection {
+	height: 100%;
+	width: 100%;
+}
+.boxHeader {
+	margin-top: 0;
+}
+
+.attendanceBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: whitesmoke;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+	margin: auto;
+	width: 80.9%;
+	min-height: 50%;
+	padding: 1em;
+	margin-bottom: 10%;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.gotoButton {
+	padding: 0.6em 1.2em;
+	width: 80.9%;
+	font-size: 0.9em;
+	background-color: #c3e88d;
+	color: #333;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gotoButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gotoButton:active {
+	transform: translateY(2px);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

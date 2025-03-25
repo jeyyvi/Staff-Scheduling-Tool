@@ -1,0 +1,247 @@
+:root {
+	--primary-color: #4e6969;
+	--hover-color: #3d5555;
+	--background-color: #eaf5ea;
+	--greyed-out-color: rgba(0, 0, 0, 0.2);
+	--text-color: #ffffff;
+	--approved-leave-color: rgba(
+		144,
+		238,
+		144,
+		0.7
+	); /* Darker green for approved leaves */
+	--applied-leave-color: rgba(
+		255,
+		165,
+		0,
+		0.7
+	); /* Darker orange for applied leaves */
+}
+
+.monthlyScheduleContainer {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: var(--background-color);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	overflow: hidden;
+	transform-origin: top center;
+}
+
+.monthNavigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.monthCenter {
+	display: flex;
+	align-items: center;
+}
+
+.monthCenter span {
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.monthNavigation button {
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.monthNavigation button:hover {
+	background-color: var(--hover-color);
+}
+
+.todayButton {
+	margin-left: 10px;
+}
+
+.calendarGridContainer {
+	width: 100%;
+	height: 100%;
+}
+
+.calendarGrid {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	width: 100%;
+}
+
+.weekRow {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+.dayCell {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100px;
+	padding: 10px;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.greyedOut {
+	color: var(--greyed-out-color);
+}
+
+.dayNumber {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 50%;
+	background-color: transparent;
+	color: black;
+}
+
+.today {
+	background-color: #6bab90;
+	color: #f5f5f5;
+}
+
+.dayName {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--greyed-out-color);
+}
+
+/* Border radius for specific cells */
+.topLeft {
+	border-top-left-radius: 8px;
+}
+
+.topRight {
+	border-top-right-radius: 8px;
+}
+
+.bottomLeft {
+	border-bottom-left-radius: 8px;
+}
+
+.bottomRight {
+	border-bottom-right-radius: 8px;
+}
+
+/* Styles for leave indicators */
+.indicatorsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+	margin-top: 20%;
+	width: 100%;
+	padding-left: calc((20% - 3px) / 2);
+}
+
+.indicatorBox {
+	width: 40%;
+	height: 16px;
+	padding-top: 1px;
+	line-height: 14px;
+	color: white;
+	border-radius: 8px; /* Pill shape */
+	text-align: center;
+	margin: 2px;
+	position: relative;
+}
+
+.indicatorBoxMore {
+	width: 40%;
+	height: 16px;
+	padding-top: 1px;
+	line-height: 14px;
+	color: white;
+	background-color: var(
+		--primary-color
+	); /* Use primary color for more indicator */
+	border-radius: 8px; /* Pill shape */
+	text-align: center;
+	margin: 2px;
+	position: relative;
+}
+
+.indicatorBox::after {
+	content: attr(data-leavetype) " leave by " attr(data-employee) ".\A (From "attr(
+			data-start
+		) " to " attr(data-end) ")";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+	white-space: nowrap;
+	font-size: 12px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	visibility: hidden;
+	z-index: 10;
+}
+
+.indicatorBoxMore::after {
+	content: "Additional Employees: \A"attr(data-remaining);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+	white-space: pre-line;
+	font-size: 12px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	visibility: hidden;
+	z-index: 10;
+}
+
+.indicatorBox:hover::after,
+.indicatorBoxMore:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.approvedLeave {
+	background-color: var(--approved-leave-color); /* Approved leave color */
+}
+
+.appliedLeave {
+	background-color: var(--applied-leave-color); /* Applied leave color */
+}
+
+.indicatorText {
+	font-size: 12px;
+	font-weight: 450;
+}

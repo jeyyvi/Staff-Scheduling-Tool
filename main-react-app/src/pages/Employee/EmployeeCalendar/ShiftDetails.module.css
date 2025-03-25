@@ -1,0 +1,27 @@
+.shiftDetailsContainer {
+	padding: 20px;
+	background-color: #f7f7f7;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+}
+
+.shiftDetail {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.shiftLabel {
+	font-weight: bold;
+}
+
+.shiftTime {
+	color: #666;
+}
+
+.noShifts {
+	text-align: center;
+	color: #999;
+}

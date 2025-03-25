@@ -1,0 +1,85 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Alqudah \harvardand\ Razali}{2018}{alqudah2018empirical}
+Alqudah, M. \harvardand\ Razali, R.  \harvardyearleft 2018\harvardyearright ,
+  `An empirical study of scrumban formation based on the selection of scrum and
+  kanban practices', {\em Int. J. Adv. Sci. Eng. Inf. Technol} {\bf
+  8}(6),~2315--2322.
+
+\harvarditem{Atlassian}{2024}{jira2024projectmanagement}
+Atlassian  \harvardyearleft 2024\harvardyearright , `Jira for project
+  management'.
+\newline\harvardurl{https://www.atlassian.com/software/jira}
+
+\harvarditem{Bl{\"o}chliger}{2004}{blochliger2004modeling}
+Bl{\"o}chliger, I.  \harvardyearleft 2004\harvardyearright , `Modeling staff
+  scheduling problems. a tutorial', {\em European Journal of Operational
+  Research} {\bf 158}(3),~533--542.
+
+\harvarditem[Caprara et~al.]{Caprara, Monaci \harvardand\
+  Toth}{2003}{caprara2003models}
+Caprara, A., Monaci, M. \harvardand\ Toth, P.  \harvardyearleft
+  2003\harvardyearright , `Models and algorithms for a staff scheduling
+  problem', {\em Mathematical programming} {\bf 98},~445--476.
+
+\harvarditem[Ernst et~al.]{Ernst, Jiang, Krishnamoorthy \harvardand\
+  Sier}{2004}{ernst2004staff}
+Ernst, A.~T., Jiang, H., Krishnamoorthy, M. \harvardand\ Sier, D.
+  \harvardyearleft 2004\harvardyearright , `Staff scheduling and rostering: A
+  review of applications, methods and models', {\em European journal of
+  operational research} {\bf 153}(1),~3--27.
+
+\harvarditem{Excalidraw}{n.d.}{excalidraw}
+Excalidraw  \harvardyearleft n.d.\harvardyearright , `Excalidraw'.
+\newline\harvardurl{https://excalidraw.com/}
+
+\harvarditem[Hajcak et~al.]{Hajcak, Holroyd, Moser \harvardand\
+  Simons}{2005}{HajcakGreg2005Bpaw}
+Hajcak, G., Holroyd, C.~B., Moser, J.~S. \harvardand\ Simons, R.~F.
+  \harvardyearleft 2005\harvardyearright , `Brain potentials associated with
+  expected and unexpected good and bad outcomes', {\em Psychophysiology} {\bf
+  42}(2),~161--170.
+
+\harvarditem{Inc.}{2024}{lucidchart2024diagramming}
+Inc., L.~S.  \harvardyearleft 2024\harvardyearright , `Lucidchart diagramming
+  tool'.
+\newline\harvardurl{https://www.lucidchart.com}
+
+\harvarditem{js.design}{2024}{jsdesign2024tool}
+js.design  \harvardyearleft 2024\harvardyearright , `js.design (ji\text{Shi}
+  she\text{Ji})'.
+\newline\harvardurl{https://js.design}
+
+\harvarditem{Konjaang \harvardand\ Xu}{2021}{KonjaangJ.Kok2021MAfE}
+Konjaang, J.~K. \harvardand\ Xu, L.  \harvardyearleft 2021\harvardyearright ,
+  `Meta-heuristic approaches for effective scheduling in infrastructure as a
+  service cloud: A systematic review', {\em Journal of network and systems
+  management} {\bf 29}(2).
+
+\harvarditem{Ltd.}{2024}{drawio2024diagramming}
+Ltd., J.  \harvardyearleft 2024\harvardyearright , `draw.io diagramming and
+  flowcharting tool'.
+\newline\harvardurl{https://app.diagrams.net}
+
+\harvarditem{{National Restaurant
+  Association}}{2024}{nationalrestaurantassociation2024demographics}
+{National Restaurant Association}  \harvardyearleft 2024\harvardyearright ,
+  `Restaurant employee demographics data brief – april 2024'.
+\newline\harvardurl{https://restaurant.org/getmedia/6f8b55ed-5b3f-40f5-ad04-709ff7ff9f0f/nra-data-brief-restaurant-employee-demographics.pdf}
+
+\harvarditem[Nikolic et~al.]{Nikolic, Cosic, Pecujlija \harvardand\
+  Miletic}{2011}{nikolic2011effect}
+Nikolic, S.~T., Cosic, I., Pecujlija, M. \harvardand\ Miletic, A.
+  \harvardyearleft 2011\harvardyearright , `The effect of the'golden ratio'on
+  consumer behaviour', {\em African Journal of Business Management} {\bf
+  5}(20),~8347.
+
+\harvarditem{Royce}{1970}{royce1970}
+Royce, W.~W.  \harvardyearleft 1970\harvardyearright , Managing the development
+  of large software systems, {\em in} `IEEE WESCON'.
+
+\harvarditem{Thesen}{1978}{thesen1978heuristic}
+Thesen, A.  \harvardyearleft 1978\harvardyearright , `Heuristic project
+  scheduling', {\em Project Management Quarterly} {\bf 9}(1),~23--29.
+
+\end{thebibliography}
